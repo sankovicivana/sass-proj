@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+
+prebaci u neku od layouta ili komponentu
+.hero-image {
+    background-image: url("../../images/hero_image.svg");
+    background-color: aqua;
+    height: 700px;
+    background-size: cover;
+    position: relative;
+}
+.nav-logo {
+    height: 140px;
+    width: 120px;
+}
+.paragraphs {
+    padding: 2rem;
+}
+.paragraph1 {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 60%;
+}
+.paragraph2 {
+    width: 60%;
+}
+.image {
+    padding: 2rem;
+    background-color: #F7F7F2;
+}
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.img-description {
+    text-align: center;
+    font-size: small;
+}
+
+*/
+h1, .h1 {
+  font-size: 40px;
+}
+
+h2, .h2 {
+  font-size: 32px;
+}
+
+h3, .h3 {
+  font-size: 28px;
+}
+
+h4, .h4 {
+  font-size: 24px;
+}
+
+/*use color variables*/
+.m-1 {
+  margin: 1rem;
+}
+.my-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.mx-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.m-2 {
+  margin: 2rem;
+}
+.my-2 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.mx-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.p-8 {
+  padding: 8px;
+}
+
+.header {
+  position: relative;
+}
+/*.nav-bar {
+    position: absolute;
+}
+.buttons {
+    position: absolute;
+}
+.description {
+    font-size: $fs-64;
+    position: absolute;
+    left: 61px;
+    top: 370px;
+}*/
+.form-section {
+  background-color: #F5F5F5;
+  text-align: center;
+}
+
+.form {
+  text-align: center;
+}
+
+.form-text {
+  font-weight: 700;
+  width: 80%;
+}
+
+.form-title {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.label {
+  text-align: left;
+}
+
+.placeholder {
+  padding: 12px 32px;
+  border: 1px solid #222725;
+  border-radius: 5px;
+  color: #222725;
+  background-color: #F7F7F2;
+}
+
+/*@use"../abstracts/colors" as *;
+ne mora ovako jer imamo index koji kao
+da spoju sve fajlove iz abstracts
+foldera zajedno u jedan
+*/
+/*i onda sve varijable dovedemo ovako */
+.footer {
+  /* ucitala si colors fajl */
+  background-color: #899878;
+  padding: 2rem;
+}
+.footer .social-icons {
+  gap: 10px;
+}
+.footer .social-icon {
+  width: 64px;
+  height: 64px;
+}
+.footer .copy-rights {
+  text-align: center;
+}
+
+/*
+
+Ne treba ti ovo 
+nije mu mesto ovde
+
+.nav-title {
+    align-self: center;
+}*/
+/*flex stvaras klase
+samo koje se ticu flexa 
+
+utility klase za flex
+*/
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+/* ovo ide u navigaciju*/
+.nav-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  list-style: none;
+  text-decoration: none;
+  color: none;
+}
+
+.buttons {
+  top: 500px;
+  left: 26px;
+  display: flex;
+  gap: 2rem;
+}
+
+/*ovo ide u footer fajl*/
+.footer-icons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.logo-title {
+  display: flex;
+  text-align: center;
+}
+
+.btn {
+  border: 3px solid #222725;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.btn .btn-apply {
+  color: #222725;
+  background-color: #E4E6C3;
+}
+.fs-64 {
+  font-size: 64px;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/*# sourceMappingURL=style.css.map */

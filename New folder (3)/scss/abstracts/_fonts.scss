@@ -1,0 +1,32 @@
+$fw-400: 400;
+$italic-400: 400;
+$fw-bold: 700;
+$bold-italic: 700;
+
+$fs-base: 16px;
+$fs-64: 64px;
+
+$fs-1: 40px;
+$fs-2: 32px;
+$fs-3: 28px;
+$fs-4: 24px;
+
+h1, .h1 {
+    font-size: $fs-1;
+}
+
+h2, .h2 {
+    font-size: $fs-2;
+}
+
+h3, .h3 {
+    font-size: $fs-3;
+}
+
+h4, .h4 {
+    font-size: $fs-4;
+}
+
+
+
+

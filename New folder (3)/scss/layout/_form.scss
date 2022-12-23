@@ -1,0 +1,25 @@
+@use "../abstracts" as *;
+
+.form-section {
+ background-color: #F5F5F5;
+ text-align: center;
+}
+.form {
+    text-align: center;
+}
+.form-text {
+    font-weight: $fw-bold;
+    width: 80%;
+}
+.form-title {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.label {
+    text-align: left;
+}
+.placeholder {
+    padding: 12px 32px;
+    @include input ();
+}

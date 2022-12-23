@@ -1,0 +1,53 @@
+@use "../abstracts/colors" as *;
+
+/*flex stvaras klase
+samo koje se ticu flexa 
+
+utility klase za flex
+*/
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* ovo ide u navigaciju*/
+.nav-list {
+    display: flex;
+    gap: 2rem;
+ 
+}
+.nav-link {
+    list-style: none;
+    text-decoration: none;
+    color: none;
+}
+
+
+.buttons {
+top: 500px;
+left: 26px;
+display: flex;
+gap: 2rem;
+}
+
+/*ovo ide u footer fajl*/
+.footer-icons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.logo-title{
+    display: flex;
+    text-align: center;
+}

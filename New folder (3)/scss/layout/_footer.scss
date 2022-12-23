@@ -1,0 +1,35 @@
+/*@use"../abstracts/colors" as *;
+ne mora ovako jer imamo index koji kao
+da spoju sve fajlove iz abstracts
+foldera zajedno u jedan
+*/
+/*i onda sve varijable dovedemo ovako */
+@use "../abstracts/" as *;
+
+
+.footer {
+    /* ucitala si colors fajl */
+    background-color: $bg-footer; //#899878
+    padding: 2rem;
+    .footer-icons {
+
+    }
+    .social-icons {
+        gap: 10px;
+    }
+    .social-icon {
+        width: 64px;
+        height: 64px;
+    }
+    .copy-rights {
+        text-align: center;
+    }
+}
+/*
+
+Ne treba ti ovo 
+nije mu mesto ovde
+
+.nav-title {
+    align-self: center;
+}*/
